@@ -224,7 +224,7 @@ class ImageViewer(QMainWindow):
             self.zoomOut()
 
     def contextMenuEvent(self, event):
-        # 邮件菜单
+        # 右键菜单
         menu = QMenu()
         menu.addAction(QIcon('image\\zoom_in.png'),
                        '放大          Scorll Up, W', self.zoomIn)
@@ -252,10 +252,10 @@ class ImageViewer(QMainWindow):
 
     def about(self):
         QMessageBox.about(self, "关于Magic Viewer",
-                          "<b>Magic Viewer</b>是一个基于PyQt5的开源图片浏览器。"
-                          "Aurth : Youth Lee\n"
-                          "Version : Ver 0.3\n"
-                          "URL : https://github.com/createnewli/Magic-Viewer#magic-viewer")
+                          "<b>Magic Viewer</b>是一个基于PyQt5的开源图片浏览器<br>"
+                          "作者 : Youth Lee<br>"
+                          "版本 : Ver 0.3<br>"
+                          "网址 : <a href='https://github.com/createnewli/Magic-Viewer'>https://github.com/createnewli/Magic-Viewer</a>")
 
 
 if __name__ == '__main__':
